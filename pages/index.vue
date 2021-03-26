@@ -26,7 +26,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $axios, $store }) {
+    const events = await $axios.$get('/api/webinars')
+    console.log(events)
+  },
+}
 </script>
 
 <style>

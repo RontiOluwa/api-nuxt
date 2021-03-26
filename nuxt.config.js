@@ -40,10 +40,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    proxy: true,
+  },
+
+  proxy: {
+    '/api/': 'https://allansolutions.com/.netlify/functions',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
