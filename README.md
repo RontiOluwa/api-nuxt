@@ -1,4 +1,4 @@
-# Test: Fullstack, Senior
+# Test: Frontend, Senior
 
 ## Instructions
 
@@ -11,5 +11,4 @@
 - organize the design into reusable components
 - styling can either be implemented via TailwindCSS (already installed as a dependency) or as regular CSS
 - make commits at logical points with informative messages
-- update nuxt configuration so that `yarn generate` generates a static page with all markup and content from the API included
 - once complete, please push the commits to the repo in github and email me at chris@allansolutions.com to let me know
