@@ -63,9 +63,9 @@ export default {
     created() {
         const api = 'https://allansolutions.com/.netlify/functions/webinars'
         axios.get(api).then((result)=>{
-        this.$store.commit('addList',result.data)
-        this.webinerList = result.data
-        this.loader = false
+            this.$store.commit('equateList',result.data)
+            this.webinerList = this.$store.state.list
+            this.loader = false
         })
     },
 }
