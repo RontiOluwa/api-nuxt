@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div v-for="webinar in item.webinars" :key="webinar.title">
-                <div class="flex my-12">
+                <div class="flex my-6">
                     <div class="w-32"></div>
                     <div class="w-11/12 flex">
                         <div class="bg-B1DEFF p-4 rounded w-1/4 text-center">
@@ -34,13 +34,13 @@
                             <a class="text-xs">2 HRS</a>
                             </div>
                         </div>
-                        <div class="w-3/4 bg-B1DEFF mx-3 rounded p-5">
+                        <div class="w-3/4 bg-B1DEFF mx-3 rounded p-4">
                             <h4 class="font-bold">{{webinar.title}}</h4>
                             <p class="text-xs my-2">{{webinar.blurb}}</p>
-                            <div class="border-top-black my-5">
+                            <div class="border-top-black my-1">
                             <p class="text-sm my-2">Speaker</p>
                             <ul v-for="speaker in webinar.speakers" :key="speaker.name">
-                                <li class="text-xs my-2">{{speaker.name}}, {{speaker.position}} - {{speaker.company}}</li>                  
+                                <li class="text-xs my-1">{{speaker.name}}, {{speaker.position}} - {{speaker.company}}</li>                  
                             </ul>
                             </div>
                         </div>
